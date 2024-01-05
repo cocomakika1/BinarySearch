@@ -1,0 +1,18 @@
+package antrenman;
+import java.util.Scanner;
+public class main {
+
+	public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+ int target=input.nextInt();
+int[] sortedArray= {1,2,3,4,5,6,7,8,9,0,10};
+int binaryResult=binarySearch(sortedArray,target);
+if(binaryResult!=-1) {
+	System.out.println("aranılan sayı olan "+target+" bulunduğu indes "+binaryResult);
+}else {
+	System.out.println("aradığınız sayı bulunamadı");
+}
+
+
+  }
+}
